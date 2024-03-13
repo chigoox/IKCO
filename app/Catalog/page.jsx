@@ -53,7 +53,7 @@ function page() {
         {
             name: 'Soft White Shaker',
             desc: 'The Shaker styled design incorporates an Ivory White Linen finish with double ridged mullions running horizontally on the upper and lower rails. Uniquely different with a clean contemporary look.',
-            feat: ['Wall cabinet height: 30", 36"​, 42"', 'Ivory stain with double applique and shaker design', 'Solid wood doors & frame', 'Full overlay door', 'Dovetail drawer box', 'Soft close: drawers & doors', 'Concealed European style  6 ways adjustable hinges', 'Adjustable shelves 3/4″'],
+            feats: ['Wall cabinet height: 30", 36"​, 42"', 'Ivory stain with double applique and shaker design', 'Solid wood doors & frame', 'Full overlay door', 'Dovetail drawer box', 'Soft close: drawers & doors', 'Concealed European style  6 ways adjustable hinges', 'Adjustable shelves 3/4″'],
             imageMain: 'https://static.wixstatic.com/media/bca7b7_f12c3df310a541a7915502cdecb89d1d~mv2.jpg/v1/fill/w_484,h_478,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Soft%20White%20Shaker.jpg',
             images: [
                 'https://static.wixstatic.com/media/bca7b7_cf683c42d4e74481b114605d62e91375~mv2.jpg/v1/fill/w_705,h_470,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_cf683c42d4e74481b114605d62e91375~mv2.jpg',
@@ -77,7 +77,7 @@ function page() {
     ]
     return (
         <div>
-            <ProductView name={selected.name} />
+            <ProductView selected={selected} setSelected={setSelected} />
             <h1 className='text-3xl font-bold text-center text-white underline'>Catalog</h1>
             <div className='grid-cols-4 grid text-white mt-4'>
                 {catalogItems.map((cabinet) => {

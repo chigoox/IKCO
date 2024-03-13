@@ -1,25 +1,22 @@
 'use client'
+import EmblaCarouselThumb from '@/app/GlobalComponets/Carousel/CarouselThumb';
 import { Modal } from 'antd';
 import { useState } from 'react';
 
 
-const ProductView = ({ name }) => {
-    const [open, setOpen] = useState(true);
+const ProductView = ({ setSelected, selected }) => {
     const [disabled, setDisabled] = useState(true);
 
     const handleCancel = (e) => {
-        console.log(e);
-        setOpen(false);
+        setSelected(false);
     };
 
 
 
-
+    const { name, desc, feats, imageMain, images } = selected || { name: null, desc: null, feats: [], imageMain: '', images: [] }
     return (
         <>
-            <button onClick={() => { setOpen(!open) }} className='h-20 w-20 rounded-full bg-black-800 fixed z-[99] border-white border-dotted border-2 bg-opacity-50 hover:bg-blue-700 trans hover:scale-[1.2] right-10 shadow-sm bottom-10 font-bold text-white'>
-                <h1>{name}</h1>
-            </button>
+
             <Modal
                 footer={null}
                 title={
@@ -41,14 +38,29 @@ const ProductView = ({ name }) => {
                         onBlur={() => { }}
                     // end
                     >
-
+                        <div className='px-4 mt-4'>
+                            <h1 className='text-3xl font-bold'>{name}</h1>
+                            <h1 className=''>{desc}</h1>
+                        </div>
                     </div>
                 }
-                open={open}
+                open={selected}
                 onCancel={handleCancel}
 
             >
-                <div className='center gap-1 p-2'>
+                <div className='p-2 '>
+
+                    <div className='center gap-6 h-52'>
+                        <img className=' w-1/2' src={imageMain} alt="" />
+                        <ul>
+                            {feats.map((item) => <li className='list-disc'>{item}</li>)}
+                        </ul>
+                    </div>
+
+                    <EmblaCarouselThumb
+                        slides={selected.images}
+
+                    />
 
 
 
