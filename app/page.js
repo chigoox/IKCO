@@ -1,113 +1,91 @@
+import { ArrowBigRightDash, CheckCheckIcon } from "lucide-react";
 import Image from "next/image";
+import QuoteForm from "./GlobalComponets/QuoteCollector/QuoteForm";
+import Link from "next/link";
 
-export default function Home() {
+
+
+export const Checklist = ({ title, desc }) => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="p-2 lg:w-96">
+      <div className="center gap-2">
+        <CheckCheckIcon className="flex-shrink-0" size={24} />
+        <div>
+          <h1 className="text-xl lg:text-2xl font-extrabold border-b">{title}</h1>
+          <p className="text-sm lg:text-base">{desc}</p>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+    </div>
+  )
+}
+
+
+
+
+export default function Home() {
+
+  const checklist = [
+    {
+      title: ' 100% Solid Wood', desc: 'All solid wood doors, drawers and frames, with full plywood interior boxes.'
+    },
+    { title: 'Dovetailed Drawer Box', desc: 'Hardwood dovetailed drawer boxes provide an exquisite look while sustaining maximum durability.' },
+    { title: 'Color Matched Interior', desc: 'Fully finished interiors that are meticulously color matched to the exterior.' },
+    { title: 'Uncompromised Durability', desc: 'Strategically placed metal brackets are expertly installed at each of the four corners, meticulously designed to provide unparalleled structural rigidity and stability.' },
+    { title: 'Soft-Closing Door Hinges', desc: 'Concealed European style soft-close, 6-way adjustable, easy to access and adjust.' },
+    { title: 'Soft-Closing Drawer Slides', desc: 'Undermount, full extension, heavy-duty, and with smooth and fluid operation. The lock-in mechanisms provide effortless performance with the ease of adjustability.' },
+    { title: 'CARB2 Compliant', desc: 'Our products undergo rigorous testing for NAF and ULEF certification, ensuring formaldehyde levels well within safety limits.' },
+    { title: 'TSCA Title VI Compliant', desc: 'Certified by an EPA TSCA Title VI TPC with all of the required accreditations. Our products meet the requirement of numerical formaldehyde emission standards.' },
+    { title: 'Certified Member of NKBA', desc: 'Member of the National Kitchen & Bath Association, promoting professionalism in the Kitchen and Bath industry.' },
+  ]
+
+
+  return (
+    <main className="flex min-h-screen relative  w-full overflow-hidden flex-col items-center    lg:py-24">
+      <QuoteForm />
+
+      <div className="h-96 w-full relative">
+        <div className="absolute m-auto text-center h-full text-white p-2 w-full center-col bg-black trans lg:bg-opacity-0 bg-opacity-[0.3] lg:hover:bg-opacity-25">
+          <h1 className="text-4xl font-extrabold">WELCOME TO IKCO</h1>
+          <h3 className="text-lg font-bold ">Wholesaler of Refined Cabinetry in New Jersey. High Quality Solid Wood Cabinets When You Need Them!</h3>
+        </div>
+        <img className=" object-cover w-full h-full" src={'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} alt="" />
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <Link href={'/Catalog'} className="mb-20 text-2xl center group  text-white">
+        <h1 className="border-b-2">See All catalog</h1> <ArrowBigRightDash size={32} className="group-hover:text-orange-600 trans h-full" />
+      </Link>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <div className="h-auto px-4 text-white ">
+        <div className="center-col mt-4">
+          <div className="text-center">
+            <h1 className="text-3xl font-extrabold">Cabinet designs</h1>
+            <h1>Provide design ideas and suggestions</h1>
+            <h1>Three-dimensional (3D) design</h1>
+          </div>
+          <div className="center p-2 gap-2">
+            <img className="object-cover rounded-full w-1/3 h-40" src={'https://images.unsplash.com/photo-1631048498692-af6262577031?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} alt="" />
+            <img className="object-cover rounded-full w-1/3 h-52" src={'https://images.unsplash.com/photo-1610210244369-3cca4be84722?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} alt="" />
+            <img className="object-cover rounded-full w-1/3 h-64" src={'https://images.unsplash.com/photo-1591208824584-1de04f9b0664?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} alt="" />
+          </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        </div>
+        <div>
+          <img className="object-cover h-24 w-full rounded-full" src={'https://images.unsplash.com/photo-1614976523626-d598aafd4fda?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} alt="" />
+          <div className=" p-2">
+            <h1 className="text-3xl font-bold">Fast Delivery</h1>
+            <h1>Delivery to NY, NJ</h1>
+            <h1>Domestic shipping available for the United States</h1>
+          </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        </div>
       </div>
-    </main>
+      <div className="grid grid-cols-2 lg:grid-cols-3 mt-4 text-white">
+        {checklist.map((item) => {
+          return (<Checklist key={item.title} title={item.title} desc={item.desc} />)
+        })}
+
+      </div>
+    </main >
   );
 }
