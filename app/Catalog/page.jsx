@@ -79,7 +79,7 @@ function page() {
         <div>
             <ProductView selected={selected} setSelected={setSelected} />
             <h1 className='text-3xl font-bold text-center text-white underline'>Catalog</h1>
-            <div className='grid-cols-4 grid text-white mt-4'>
+            <div className='lg:grid-cols-4 grid-cols-3  grid text-white mt-4'>
                 {catalogItems.map((cabinet) => {
                     return (
                         <Button onPress={() => { setSelected(cabinet) }} className='center-col gap-4 group'>
