@@ -40,7 +40,7 @@ const ProductView = ({ setSelected, selected }) => {
                     >
                         <div className='px-4 mt-4'>
                             <h1 className='text-3xl font-bold'>{name}</h1>
-                            <h1 className=''>{desc}</h1>
+                            <h1 className='font-light'>{desc}</h1>
                         </div>
                     </div>
                 }
@@ -50,7 +50,7 @@ const ProductView = ({ setSelected, selected }) => {
             >
                 <div className='p-2 '>
 
-                    <div className='center gap-6 h-52'>
+                    <div className='center gap-6 font-extralight my-4 h-52'>
                         <img className=' w-1/2' src={imageMain} alt="" />
                         <ul>
                             {feats.map((item) => <li className='list-disc'>{item}</li>)}

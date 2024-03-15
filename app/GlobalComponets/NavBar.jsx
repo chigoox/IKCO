@@ -1,4 +1,5 @@
 import { Clock, PhoneIcon } from "lucide-react"
+import Link from "next/link"
 
 export const NavBar = () => {
 
@@ -11,7 +12,7 @@ export const NavBar = () => {
     return (
         <div className=" h-72 w-screen text-white overflow-hidden center-col">
             <div className="h-3/4 p-2 lg:h-1/2 w-full flex-col lg:flex justify-between  item-center">
-                <h1 className="text-6xl font-extrabold w-1/2">IKCO Cabinets</h1>
+                <Link href={'/'} className="text-7xl font-extrabold w-1/2">IKCO Cabinets</Link>
                 <div className="font-bold h-fit relative">
                     <div className="center w-1/2 gap-2">
                         <PhoneIcon />

@@ -1,24 +1,40 @@
 'use client'
 import React, { useRef, useState } from 'react';
 import Draggable from 'react-draggable';
-import { Modal } from 'antd';
+import { Modal, message } from 'antd';
 import { Input } from 'antd';
 import { Button } from '@nextui-org/react';
+import { addToDoc } from '@/app/MyCodes/Database';
+import { Timestamp } from 'firebase/firestore';
 
 
 const QuoteForm = ({ }) => {
     const [open, setOpen] = useState(true);
     const [disabled, setDisabled] = useState(true);
-    const [formData, setFormData] = useState({ name: '', email: '', phone: '' })
+    const initialData = { name: '', email: '', phone: '', contacted: false }
+    const [formData, setFormData] = useState(initialData)
 
     const handleCancel = (e) => {
         console.log(e);
         setOpen(false);
     };
 
-    const onSubmit = () => {
-        console.log(formData)
+    const onSubmit = async () => {
         //send data to firebase 
+        setFormData((old) => ({ ...old, time: new Timestamp() }))
+        if (formData.name && formData.email && formData.phone) {
+            console.log('formData')
+            await addToDoc('Users', formData.name, formData)
+            message.success('Submited!')
+            setFormData(initialData)
+            setOpen(false)
+            return
+        } else {
+            if (formData.name == '') message.error("name is missing")
+            if (formData.email == '') message.error("email is missing")
+            if (formData.phone == '') message.error("phone is missing")
+        }
+
     }
 
     const onChange = ({ target }) => {
@@ -66,9 +82,9 @@ const QuoteForm = ({ }) => {
                             <h1 className='text-4xl font-extrabold my-2'>Get Your Quote Now!</h1>
                         </div>
                         <div className='center-col gap-2'>
-                            <Input onChange={onChange} name={'name'} className='h-10' type="text" label="Full Name" placeholder="Full name" />
-                            <Input onChange={onChange} name={'email'} className='h-10' type="email" label="Email" placeholder="Email" />
-                            <Input onChange={onChange} name={'phone'} className='h-10' type="number" label="Phone" placeholder="Phone" />
+                            <Input value={formData.name} onChange={onChange} name={'name'} className='h-10' type="text" label="Full Name" placeholder="Full name" />
+                            <Input value={formData.email} onChange={onChange} name={'email'} className='h-10' type="email" label="Email" placeholder="Email" />
+                            <Input value={formData.phone} onChange={onChange} name={'phone'} className='h-10' type="number" label="Phone" placeholder="Phone" />
                             <Button onPress={onSubmit} className='w-3/4 h-10 rounded-full bg-blue-700 m-auto text-white font-bold'>Submit</Button>
                         </div>
                     </div>

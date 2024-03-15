@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+import { Inter, Josefin_Sans, Jost, Roboto } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "./GlobalComponets/NavBar";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Jost({ weight: ['400'], subsets: ["latin"] });
 
 export const metadata = {
   title: "IKCO",
