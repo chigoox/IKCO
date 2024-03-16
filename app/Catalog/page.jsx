@@ -147,7 +147,7 @@ function page() {
                 {catalogItems.map((cabinet) => {
                     return (
                         <Button onPress={() => { setSelected(cabinet) }} className='center-col gap-4 group'>
-                            <div className='lg:h-40 lg:w-40 h-32 m-1 col-span-1 group-hover:border-dotted border-4 overflow-hidden rounded-full shadow-sm'>
+                            <div className='lg:h-40 lg:w-40 h-32 w-32 m-1 col-span-1 group-hover:border-dotted border-4 overflow-hidden rounded-full shadow-sm'>
 
                                 <img className='h-full  group-hover:scale-[1.2] trans w-full object-cover rounded-full' src={cabinet.images[0]} alt="" />
                             </div>
