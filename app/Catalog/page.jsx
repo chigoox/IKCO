@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import ProductView from './Componets/ProductView'
 import { Button } from '@nextui-org/react'
+import QuoteForm from '../GlobalComponets/QuoteCollector/QuoteForm'
 
 function page() {
     const [selected, setSelected] = useState(false)
@@ -96,6 +97,28 @@ function page() {
             ]
         },
         {
+            name: 'Espresso Shaker',
+            desc: 'With a warm and rich tinted stain, the Espresso Shaker brings a kitchen to life compared to other dark colored cabinets. When paired with grooves, it becomes perfect for both a contemporary or traditional home decor.',
+            feats: ['Wall cabinet height: 30", 36"​, 42"', 'Rich tinted finish with shaker design', 'Solid wood doors & frame', 'Solid wood doors & frame', 'Full overlay door', 'Dovetail drawer box', 'Soft close: drawers & doors', 'Concealed European style  6 ways adjustable hinges', 'Adjustable shelves 3/4″'],
+            imageMain: 'https://static.wixstatic.com/media/bca7b7_f5cd8f2a7fc64a6b92605d47dfc1663c~mv2.jpg/v1/crop/x_0,y_8,w_384,h_384/fill/w_521,h_513,al_c,lg_1,q_80,enc_auto/espresso%206.jpg',
+            images: [
+                'https://static.wixstatic.com/media/bca7b7_c5e045e34ac5431983dab6ad161c374c~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_c5e045e34ac5431983dab6ad161c374c~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_a4dedfd9aac44fb1b6f25a49a26b1a60~mv2.jpg/v1/fill/w_517,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_a4dedfd9aac44fb1b6f25a49a26b1a60~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_7cdd1f1d23624b429d123d995d396e29~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_7cdd1f1d23624b429d123d995d396e29~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_e3d30d3b10e444da8a2b133770464830~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_e3d30d3b10e444da8a2b133770464830~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_65efc21c56af4609a70da6d232c7d0e1~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_65efc21c56af4609a70da6d232c7d0e1~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_6b294eabfac74c40bbffbafeb2586ca3~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_6b294eabfac74c40bbffbafeb2586ca3~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_95bc3f5a7fd143bd94ed0ce3a9db1817~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_95bc3f5a7fd143bd94ed0ce3a9db1817~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_6b294eabfac74c40bbffbafeb2586ca3~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_6b294eabfac74c40bbffbafeb2586ca3~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_95bc3f5a7fd143bd94ed0ce3a9db1817~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_95bc3f5a7fd143bd94ed0ce3a9db1817~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_7e79379c7c8945d2b33e7865c8c97b0f~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_7e79379c7c8945d2b33e7865c8c97b0f~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_aa540ee0ef234099a74af9e1551f98e6~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_aa540ee0ef234099a74af9e1551f98e6~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_13cc022d0f4f44359608b70659d59b98~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_13cc022d0f4f44359608b70659d59b98~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_0159d3454ede4acf8ecbc9cfb8548c6b~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_0159d3454ede4acf8ecbc9cfb8548c6b~mv2.jpg',
+
+            ]
+        },
+        {
             name: 'Saddle Brown',
             desc: 'A rustic warm stained finish handcrafted with a chocolate glazing. The saddle brown makes a kitchen feel soothing and will match any home\'s decor.',
             feats: ['Wall cabinet height: 30", 36"​, 42"', 'Saddle stain with a hand applied glaze', 'Raised panel', 'Solid wood doors & frame', 'Full overlay door', 'Dovetail drawer box', 'Soft close: drawers & doors', 'Concealed European style  6 ways adjustable hinges', 'Adjustable shelves 3/4″'],
@@ -117,30 +140,73 @@ function page() {
             ]
         },
         {
-            name: 'Espresso Shaker',
-            desc: 'With a warm and rich tinted stain, the Espresso Shaker brings a kitchen to life compared to other dark colored cabinets. When paired with grooves, it becomes perfect for both a contemporary or traditional home decor.',
-            feats: ['Wall cabinet height: 30", 36"​, 42"', 'Rich tinted finish with shaker design', 'Solid wood doors & frame', 'Solid wood doors & frame', 'Full overlay door', 'Dovetail drawer box', 'Soft close: drawers & doors', 'Concealed European style  6 ways adjustable hinges', 'Adjustable shelves 3/4″'],
-            imageMain: 'https://static.wixstatic.com/media/bca7b7_f5cd8f2a7fc64a6b92605d47dfc1663c~mv2.jpg/v1/crop/x_0,y_8,w_384,h_384/fill/w_521,h_513,al_c,lg_1,q_80,enc_auto/espresso%206.jpg',
+            name: 'Glazed Maple',
+            desc: 'With the rise and fall of popular design trends, the Glazed Maple lineup stands tall as a timeless classic in an ever-changing industry.  Often described as a traditional classic, this time-honored styling incorporates an elegant touch of ebony glazing.',
+            feats: ['Wall cabinet height: 30", 36"​, 42"', 'Ebony glazing with raised panel design', 'Solid wood doors & frame', 'Full overlay door', 'Dovetail drawer box', 'Soft close: drawers & doors', 'Concealed European style  6 ways adjustable hinges', 'Adjustable shelves 3/4″'],
+            imageMain: 'https://static.wixstatic.com/media/bca7b7_f4e555ecb40f4d799e74965dd4582fb5~mv2.jpg/v1/fill/w_461,h_460,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Glazed%20Maple_%E5%89%AF%E6%9C%AC.jpg',
             images: [
-                'https://static.wixstatic.com/media/bca7b7_c5e045e34ac5431983dab6ad161c374c~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_c5e045e34ac5431983dab6ad161c374c~mv2.jpg',
-                'https://static.wixstatic.com/media/bca7b7_a4dedfd9aac44fb1b6f25a49a26b1a60~mv2.jpg/v1/fill/w_517,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_a4dedfd9aac44fb1b6f25a49a26b1a60~mv2.jpg',
-                'https://static.wixstatic.com/media/bca7b7_7cdd1f1d23624b429d123d995d396e29~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_7cdd1f1d23624b429d123d995d396e29~mv2.jpg',
-                'https://static.wixstatic.com/media/bca7b7_e3d30d3b10e444da8a2b133770464830~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_e3d30d3b10e444da8a2b133770464830~mv2.jpg',
-                'https://static.wixstatic.com/media/bca7b7_65efc21c56af4609a70da6d232c7d0e1~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_65efc21c56af4609a70da6d232c7d0e1~mv2.jpg',
-                'https://static.wixstatic.com/media/bca7b7_6b294eabfac74c40bbffbafeb2586ca3~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_6b294eabfac74c40bbffbafeb2586ca3~mv2.jpg',
-                'https://static.wixstatic.com/media/bca7b7_95bc3f5a7fd143bd94ed0ce3a9db1817~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_95bc3f5a7fd143bd94ed0ce3a9db1817~mv2.jpg',
-                'https://static.wixstatic.com/media/bca7b7_6b294eabfac74c40bbffbafeb2586ca3~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_6b294eabfac74c40bbffbafeb2586ca3~mv2.jpg',
-                'https://static.wixstatic.com/media/bca7b7_95bc3f5a7fd143bd94ed0ce3a9db1817~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_95bc3f5a7fd143bd94ed0ce3a9db1817~mv2.jpg',
-                'https://static.wixstatic.com/media/bca7b7_7e79379c7c8945d2b33e7865c8c97b0f~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_7e79379c7c8945d2b33e7865c8c97b0f~mv2.jpg',
-                'https://static.wixstatic.com/media/bca7b7_aa540ee0ef234099a74af9e1551f98e6~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_aa540ee0ef234099a74af9e1551f98e6~mv2.jpg',
-                'https://static.wixstatic.com/media/bca7b7_13cc022d0f4f44359608b70659d59b98~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_13cc022d0f4f44359608b70659d59b98~mv2.jpg',
-                'https://static.wixstatic.com/media/bca7b7_0159d3454ede4acf8ecbc9cfb8548c6b~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_0159d3454ede4acf8ecbc9cfb8548c6b~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_0792a3812d154b80bee13c898b32c25a~mv2.jpg/v1/fill/w_341,h_228,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_0792a3812d154b80bee13c898b32c25a~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_2efd12f7f8864fde9a2bdc508fd546c0~mv2.jpg/v1/fill/w_342,h_235,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_2efd12f7f8864fde9a2bdc508fd546c0~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_dc7e43ded559415d84b577877c04b754~mv2.jpg/v1/fill/w_342,h_235,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_dc7e43ded559415d84b577877c04b754~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_adb59fc193d14a948f368490ba2012e5~mv2.jpg/v1/fill/w_342,h_209,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_adb59fc193d14a948f368490ba2012e5~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_7951ad4421554bbbac20551af282e1a0~mv2.jpg/v1/fill/w_342,h_235,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_7951ad4421554bbbac20551af282e1a0~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_82b60ec7b9b54318827a9a8de13be500~mv2.jpg/v1/fill/w_342,h_228,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_82b60ec7b9b54318827a9a8de13be500~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_0de0151d2b6d441285251b58d9fdffed~mv2_d_1800_1200_s_2.jpg/v1/fill/w_341,h_228,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_0de0151d2b6d441285251b58d9fdffed~mv2_d_1800_1200_s_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_cb054bf1e4944dadbd3760f82c4c196e~mv2.jpg/v1/fill/w_342,h_228,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_cb054bf1e4944dadbd3760f82c4c196e~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_05493061ac9749338b8049f4fdb11499~mv2.jpg/v1/fill/w_342,h_228,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_05493061ac9749338b8049f4fdb11499~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_2528d21bd9664aa1bd702971c813f19d~mv2.jpg/v1/fill/w_342,h_345,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_2528d21bd9664aa1bd702971c813f19d~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_4289d5ef98c4499e92089150c9fe1622~mv2_d_1800_1200_s_2.jpg/v1/fill/w_341,h_228,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_4289d5ef98c4499e92089150c9fe1622~mv2_d_1800_1200_s_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_fc94f72c639046b3b74132b017a4ce37~mv2_d_1800_1200_s_2.jpg/v1/fill/w_341,h_228,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_fc94f72c639046b3b74132b017a4ce37~mv2_d_1800_1200_s_2.jpg',
 
             ]
-        }
+        },
+        {
+            name: 'Cherry Shaker',
+            desc: 'This double shaker design is finished in a glowing cherry stain. Truly a modern embodiment of style.',
+            feats: ['Wall cabinet height: 30", 36"​, 42"', 'Cherry stain with shaker design', 'Solid wood doors & frame', 'Full overlay door', 'Dovetail drawer box', 'Soft close: drawers & doors', 'Concealed European style  6 ways adjustable hinges', 'Adjustable shelves 3/4″'],
+            imageMain: 'https://static.wixstatic.com/media/bca7b7_09990021c1894bfaa4f6ed30c6d9fdd9~mv2.jpg/v1/crop/x_0,y_0,w_397,h_410/fill/w_476,h_487,al_c,lg_1,q_80,enc_auto/Cherry%20Shaker.jpg',
+            images: [
+                'https://static.wixstatic.com/media/bca7b7_bff77838e9814e25a9344cdda623ed11~mv2_d_1800_1200_s_2.jpg/v1/fill/w_341,h_228,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_bff77838e9814e25a9344cdda623ed11~mv2_d_1800_1200_s_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_bff77838e9814e25a9344cdda623ed11~mv2_d_1800_1200_s_2.jpg/v1/fill/w_341,h_228,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_bff77838e9814e25a9344cdda623ed11~mv2_d_1800_1200_s_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_999ed21e6c834a9f95e724e54fd39ddd~mv2.jpg/v1/fill/w_342,h_456,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_999ed21e6c834a9f95e724e54fd39ddd~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_6cc454cd5b6f4fac958fbd17f5ed1ca5~mv2.jpg/v1/fill/w_342,h_456,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_6cc454cd5b6f4fac958fbd17f5ed1ca5~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_ffac062d53264e1686ae99161d830b3d~mv2.jpg/v1/fill/w_341,h_228,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_ffac062d53264e1686ae99161d830b3d~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_ecb1ec7c86814958a4b069068238292e~mv2.jpg/v1/fill/w_343,h_164,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_ecb1ec7c86814958a4b069068238292e~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_ef457bc68e11407d875727c0d0fb0895~mv2.jpg/v1/fill/w_342,h_256,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_ef457bc68e11407d875727c0d0fb0895~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_0fd2a332c8964deea6ac6b6abcb5f6ff~mv2.jpg/v1/fill/w_342,h_235,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_0fd2a332c8964deea6ac6b6abcb5f6ff~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_e70d2f061ee64883ba58386eaef1f07a~mv2.jpg/v1/fill/w_342,h_228,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_e70d2f061ee64883ba58386eaef1f07a~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_d706a9fa446c44a296f8cdcdd959cd52~mv2.jpg/v1/fill/w_342,h_228,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_d706a9fa446c44a296f8cdcdd959cd52~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_dab000ba4da94d6e8858a1f7a3cd02f0~mv2.jpg/v1/fill/w_342,h_256,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_dab000ba4da94d6e8858a1f7a3cd02f0~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_fd774bbc39814d3b923fcdde82983abe~mv2.jpg/v1/fill/w_341,h_228,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_fd774bbc39814d3b923fcdde82983abe~mv2.jpg',
+
+            ]
+        },
+        {
+            name: 'Mocha',
+            desc: 'Mocha is a rich, warm chocolate stain that provides warmth and comfort to your home. It stands out and is eye-catching when you see it, hence why the Mocha is one of our most popular style.',
+            feats: ['Wall cabinet height: 30", 36"​, 42"', 'Rich chocolate stain with raised panel design', 'Solid wood doors & frame', 'Full overlay door', 'Dovetail drawer box', 'Soft close: drawers & doors', 'Concealed European style  6 ways adjustable hinges', 'Adjustable shelves 3/4″'],
+            imageMain: 'https://static.wixstatic.com/media/bca7b7_b8eb05c2bcd44baf94cd3a25a34a47fa~mv2.jpg/v1/crop/x_7,y_0,w_395,h_410/fill/w_474,h_491,al_c,lg_1,q_80,enc_auto/Mocha_sample%20door.jpg',
+            images: [
+                'https://static.wixstatic.com/media/bca7b7_cca23bf22cd24f5b9cc260c7fc489317~mv2.jpg/v1/fill/w_948,h_711,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bca7b7_cca23bf22cd24f5b9cc260c7fc489317~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_60bc3519dcda4e27b5134cf593741c67~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,enc_auto/bca7b7_60bc3519dcda4e27b5134cf593741c67~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_b7c506b35dd44228a2e65e5ff8889844~mv2_d_3264_2448_s_4_2.jpg/v1/fill/w_948,h_711,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bca7b7_b7c506b35dd44228a2e65e5ff8889844~mv2_d_3264_2448_s_4_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_839b460fc2594dff868295c75a975308~mv2.jpg/v1/fill/w_720,h_480,al_c,lg_1,q_80,enc_auto/bca7b7_839b460fc2594dff868295c75a975308~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_b10a04fe47734551bf032bb5250db498~mv2.jpg/v1/fill/w_768,h_511,al_c,lg_1,q_85,enc_auto/bca7b7_b10a04fe47734551bf032bb5250db498~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_de7cdb278b5e4bf793f2c067ce8f6756~mv2.jpg/v1/fill/w_768,h_511,al_c,lg_1,q_85,enc_auto/bca7b7_de7cdb278b5e4bf793f2c067ce8f6756~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_9b3a8eda1d6e4c1789c5f7e82625a93c~mv2.jpg/v1/fill/w_1043,h_695,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bca7b7_9b3a8eda1d6e4c1789c5f7e82625a93c~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_6b8c595c3b784eab951c56e7ea396fae~mv2_d_1313_1750_s_2.jpg/v1/fill/w_534,h_711,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bca7b7_6b8c595c3b784eab951c56e7ea396fae~mv2_d_1313_1750_s_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_74f1114b19f248189256be7d6c11396e~mv2_d_1875_1407_s_2.jpg/v1/fill/w_947,h_711,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bca7b7_74f1114b19f248189256be7d6c11396e~mv2_d_1875_1407_s_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_9e74721720fe4c71a1bbb4c6bf05439a~mv2_d_2901_2175_s_2.jpg/v1/fill/w_949,h_711,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bca7b7_9e74721720fe4c71a1bbb4c6bf05439a~mv2_d_2901_2175_s_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_38586ea5225642e0bc5123cb60caccf6~mv2_d_3264_2448_s_4_2.jpg/v1/fill/w_948,h_711,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bca7b7_38586ea5225642e0bc5123cb60caccf6~mv2_d_3264_2448_s_4_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_1b656b5f1bdf430983b0ccdcea163d4d~mv2.jpg/v1/fill/w_948,h_711,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bca7b7_1b656b5f1bdf430983b0ccdcea163d4d~mv2.jpg',
+
+            ]
+        },
+
     ]
     return (
         <div>
+            <QuoteForm auto={false} />
             <ProductView selected={selected} setSelected={setSelected} />
             <h1 className='text-3xl font-bold text-center text-white underline'>Catalog</h1>
             <div className='lg:grid-cols-4 grid-cols-3  grid text-white mt-4 p-2'>

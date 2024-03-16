@@ -8,8 +8,8 @@ import { addToDoc } from '@/app/MyCodes/Database';
 import { Timestamp } from 'firebase/firestore';
 
 
-const QuoteForm = ({ }) => {
-    const [open, setOpen] = useState(true);
+const QuoteForm = ({ auto = true }) => {
+    const [open, setOpen] = useState(auto);
     const [disabled, setDisabled] = useState(true);
     const initialData = { name: '', email: '', phone: '', contacted: false }
     const [formData, setFormData] = useState(initialData)
