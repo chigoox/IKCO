@@ -72,7 +72,71 @@ function page() {
                 'https://static.wixstatic.com/media/bca7b7_f98476637c0243d58ee1329359fb4691~mv2_d_6016_4000_s_4_2.jpg/v1/fill/w_705,h_469,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_f98476637c0243d58ee1329359fb4691~mv2_d_6016_4000_s_4_2.jpg'
 
             ]
+        },
+        {
+            name: 'Coastal Grey Shaker',
+            desc: 'The Coastal Grey is a daring departure from the antiquated standard. In its own right, it embellishes a modern day classic with its unique stylistic prowess. It is accented with a beveled profile at the center of the door panel.',
+            feats: ['Wall cabinet height: 30", 36"​, 39"', 'Dark grey finish with shaker design', 'Solid wood doors & frame', 'Full overlay door', 'Dovetail drawer box', 'Soft close: drawers & doors', 'Concealed European style  6 ways adjustable hinges', 'Adjustable shelves 3/4″'],
+            imageMain: 'https://static.wixstatic.com/media/bca7b7_d4ea9b712168403b95a6c96cd6db8f90~mv2.jpg/v1/crop/x_15,y_15,w_342,h_359/fill/w_479,h_502,al_c,lg_1,q_80,enc_auto/2212_%E5%89%AF%E6%9C%AC.jpg',
+            images: [
+                'https://static.wixstatic.com/media/bca7b7_a701b30556ef406ab2de33153754574c~mv2.jpg/v1/fill/w_659,h_495,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_a701b30556ef406ab2de33153754574c~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_ed48287d09a5442eb083e2bf2e98f8df~mv2.jpg/v1/fill/w_517,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_ed48287d09a5442eb083e2bf2e98f8df~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_4f62e88a75e34225b77db2fb9d98c013~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_4f62e88a75e34225b77db2fb9d98c013~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_6e41f913d7334b04ae07da59d5289a59~mv2.jpg/v1/fill/w_660,h_495,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_6e41f913d7334b04ae07da59d5289a59~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_529d06111eef4b04884cbe38d52174e4~mv2.jpg/v1/fill/w_660,h_495,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_529d06111eef4b04884cbe38d52174e4~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_523292bc069e4f39b9ff763dd917f444~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_523292bc069e4f39b9ff763dd917f444~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_716ea4c118724f9aaeb878e1a60cd2dc~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_716ea4c118724f9aaeb878e1a60cd2dc~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_a0e7329372534f1ca26d053c3d2f0961~mv2.jpg/v1/fill/w_660,h_495,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_a0e7329372534f1ca26d053c3d2f0961~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_71fc693d240c4ccca34f5dbfe39065c8~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_71fc693d240c4ccca34f5dbfe39065c8~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_4655da1aab9847fdadad65806554b1de~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_4655da1aab9847fdadad65806554b1de~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_3c348aaaa5ee4d0d976d6490aab60df3~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_658,h_439,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_3c348aaaa5ee4d0d976d6490aab60df3~mv2_d_5184_3456_s_4_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_5bc281b34c924417abbe1d95793acef2~mv2_d_3648_2736_s_4_2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_5bc281b34c924417abbe1d95793acef2~mv2_d_3648_2736_s_4_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_a4ec842a3dbd458cb0d50a3dfadd4cff~mv2_d_3456_5184_s_4_2.jpg/v1/fill/w_460,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_a4ec842a3dbd458cb0d50a3dfadd4cff~mv2_d_3456_5184_s_4_2.jpg',
 
+            ]
+        },
+        {
+            name: 'Saddle Brown',
+            desc: 'A rustic warm stained finish handcrafted with a chocolate glazing. The saddle brown makes a kitchen feel soothing and will match any home\'s decor.',
+            feats: ['Wall cabinet height: 30", 36"​, 42"', 'Saddle stain with a hand applied glaze', 'Raised panel', 'Solid wood doors & frame', 'Full overlay door', 'Dovetail drawer box', 'Soft close: drawers & doors', 'Concealed European style  6 ways adjustable hinges', 'Adjustable shelves 3/4″'],
+            imageMain: 'https://static.wixstatic.com/media/bca7b7_fa3a1e005ed74cabb13e5359cb3a4829~mv2.jpg/v1/fill/w_498,h_486,al_c,lg_1,q_80,enc_auto/saddle%20brown-sample%20door.jpg',
+            images: [
+                'https://static.wixstatic.com/media/bca7b7_439a522581544edfa482ba651013e93f~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_439a522581544edfa482ba651013e93f~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_468ab7f40d224504851469381dcf3ac2~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_468ab7f40d224504851469381dcf3ac2~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_7e28bbce7b624533a3f03d68ba6444ea~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_7e28bbce7b624533a3f03d68ba6444ea~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_79823b8376a44fcbbde6f92012a1f926~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_79823b8376a44fcbbde6f92012a1f926~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_10d05877ac0f4fed9b9ad527df40fbdc~mv2_d_3872_2592_s_4_2.jpg/v1/fill/w_659,h_441,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_10d05877ac0f4fed9b9ad527df40fbdc~mv2_d_3872_2592_s_4_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_4af35a0d257f4c949b3cb76648f60f68~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_4af35a0d257f4c949b3cb76648f60f68~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_5d3f428eb1984f1eadaf7e585c7ce00f~mv2.jpg/v1/fill/w_659,h_471,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_5d3f428eb1984f1eadaf7e585c7ce00f~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_5c1bc82760e9403590dea18188cedc9f~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_5c1bc82760e9403590dea18188cedc9f~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_1b556ad10fa3412db1b24aebd82b62a2~mv2_d_2656_1494_s_2.jpg/v1/fill/w_660,h_371,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_1b556ad10fa3412db1b24aebd82b62a2~mv2_d_2656_1494_s_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_f9060b55fb74494a8a519a1637419025~mv2_d_1494_2656_s_2.jpg/v1/fill/w_388,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_f9060b55fb74494a8a519a1637419025~mv2_d_1494_2656_s_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_4a2e9c922c904cf4a0d1115d10637881~mv2_d_3290_2442_s_4_2.jpg/v1/fill/w_658,h_489,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_4a2e9c922c904cf4a0d1115d10637881~mv2_d_3290_2442_s_4_2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_dc465f7105b24c468a40c0c669734a50~mv2_d_3264_2486_s_4_2.jpg/v1/fill/w_660,h_503,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_dc465f7105b24c468a40c0c669734a50~mv2_d_3264_2486_s_4_2.jpg',
+
+            ]
+        },
+        {
+            name: 'Espresso Shaker',
+            desc: 'With a warm and rich tinted stain, the Espresso Shaker brings a kitchen to life compared to other dark colored cabinets. When paired with grooves, it becomes perfect for both a contemporary or traditional home decor.',
+            feats: ['Wall cabinet height: 30", 36"​, 42"', 'Rich tinted finish with shaker design', 'Solid wood doors & frame', 'Solid wood doors & frame', 'Full overlay door', 'Dovetail drawer box', 'Soft close: drawers & doors', 'Concealed European style  6 ways adjustable hinges', 'Adjustable shelves 3/4″'],
+            imageMain: 'https://static.wixstatic.com/media/bca7b7_f5cd8f2a7fc64a6b92605d47dfc1663c~mv2.jpg/v1/crop/x_0,y_8,w_384,h_384/fill/w_521,h_513,al_c,lg_1,q_80,enc_auto/espresso%206.jpg',
+            images: [
+                'https://static.wixstatic.com/media/bca7b7_c5e045e34ac5431983dab6ad161c374c~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_c5e045e34ac5431983dab6ad161c374c~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_a4dedfd9aac44fb1b6f25a49a26b1a60~mv2.jpg/v1/fill/w_517,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_a4dedfd9aac44fb1b6f25a49a26b1a60~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_7cdd1f1d23624b429d123d995d396e29~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_7cdd1f1d23624b429d123d995d396e29~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_e3d30d3b10e444da8a2b133770464830~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_e3d30d3b10e444da8a2b133770464830~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_65efc21c56af4609a70da6d232c7d0e1~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_65efc21c56af4609a70da6d232c7d0e1~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_6b294eabfac74c40bbffbafeb2586ca3~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_6b294eabfac74c40bbffbafeb2586ca3~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_95bc3f5a7fd143bd94ed0ce3a9db1817~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_95bc3f5a7fd143bd94ed0ce3a9db1817~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_6b294eabfac74c40bbffbafeb2586ca3~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_6b294eabfac74c40bbffbafeb2586ca3~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_95bc3f5a7fd143bd94ed0ce3a9db1817~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_95bc3f5a7fd143bd94ed0ce3a9db1817~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_7e79379c7c8945d2b33e7865c8c97b0f~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_7e79379c7c8945d2b33e7865c8c97b0f~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_aa540ee0ef234099a74af9e1551f98e6~mv2.jpg/v1/fill/w_658,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_aa540ee0ef234099a74af9e1551f98e6~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_13cc022d0f4f44359608b70659d59b98~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_13cc022d0f4f44359608b70659d59b98~mv2.jpg',
+                'https://static.wixstatic.com/media/bca7b7_0159d3454ede4acf8ecbc9cfb8548c6b~mv2.jpg/v1/fill/w_518,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bca7b7_0159d3454ede4acf8ecbc9cfb8548c6b~mv2.jpg',
+
+            ]
         }
     ]
     return (
