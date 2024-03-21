@@ -2,6 +2,7 @@ import { ArrowBigRightDash, CheckCheckIcon } from "lucide-react";
 import Image from "next/image";
 import QuoteForm from "./GlobalComponets/QuoteCollector/QuoteForm";
 import Link from "next/link";
+import { sendEmail } from "./apiCalls/Email";
 
 
 

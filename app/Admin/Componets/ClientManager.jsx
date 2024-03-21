@@ -26,7 +26,7 @@ function ClientManager({ clientList }) {
                 </div>
                 {(clientList).map((item) => {
                     return (
-                        <Button key={item} className='w-full my-1  shadow-sm text-left  bg-gray-300 h-10  flex items-center justify-between px-4'>
+                        <div key={item} className='w-full my-1  shadow-sm text-left  bg-gray-300 h-10  flex items-center justify-between px-4'>
                             {<h1 className='w-1/4 font-extralight'>{item?.name}</h1>}
                             {<h1 className='w-1/4 font-extralight'>{item?.email}</h1>}
                             {<h1 className='w-1/4 font-extralight'>{item?.phone}</h1>}
@@ -36,7 +36,7 @@ function ClientManager({ clientList }) {
                                     <Button>...</Button>
                                 </div>
                             </div>
-                        </Button>
+                        </div>
                     )
                 })}
 

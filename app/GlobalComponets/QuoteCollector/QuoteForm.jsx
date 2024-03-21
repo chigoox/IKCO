@@ -6,6 +6,8 @@ import { Input } from 'antd';
 import { Button } from '@nextui-org/react';
 import { addToDoc } from '@/app/MyCodes/Database';
 import { Timestamp } from 'firebase/firestore';
+import { sendEmail } from '@/app/apiCalls/Email';
+import { sendSMS } from '@/app/apiCalls/SMS';
 
 
 const QuoteForm = ({ auto = true }) => {
@@ -15,7 +17,7 @@ const QuoteForm = ({ auto = true }) => {
     const [formData, setFormData] = useState(initialData)
 
     const handleCancel = (e) => {
-        console.log(e);
+
         setOpen(false);
     };
 
@@ -23,9 +25,11 @@ const QuoteForm = ({ auto = true }) => {
         //send data to firebase 
         setFormData((old) => ({ ...old, time: new Timestamp() }))
         if (formData.name && formData.email && formData.phone) {
-            console.log('formData')
             await addToDoc('Users', formData.name, formData)
             message.success('Submited!')
+            sendEmail(formData.email, 'Thank you for choosing IKCO', formData, 'send')
+            sendEmail('Ikcocabinets@gmail.com', 'New Client', formData, 'new')
+            sendSMS('9082202312', `New Client: ${formData.name} \n Phone: ${formData.phone} \n Email: ${formData.email}`, formData)
             setFormData(initialData)
             setOpen(false)
             return
@@ -45,7 +49,7 @@ const QuoteForm = ({ auto = true }) => {
     return (
         <>
             <button onClick={() => { setOpen(!open) }} className='h-20 w-20 rounded-full bg-black-800 fixed z-[99] border-white border-dotted border-2 bg-opacity-50 hover:bg-blue-700 trans hover:scale-[1.2] right-10 shadow-sm bottom-10 font-bold text-white'>
-                <h1>Get Quote</h1>
+                Get Quote
             </button>
             <Modal
                 footer={null}
